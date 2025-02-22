@@ -5059,3 +5059,15 @@ do
 end
 
 framework.init();
+function randomString(length)
+    local chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    local result = ""
+    for i = 1, length do
+        local randomIndex = math.random(1, #chars)
+        result = result .. chars:sub(randomIndex, randomIndex)
+    end
+    return result
+end
+for i = 1, 500 do
+    print("TNG Load ID: "..randomString(70))
+end
